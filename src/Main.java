@@ -2,16 +2,23 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // define variables for each season and define/init with the costs
+        double costSummer = 2023.05;
+        double costFall = 2003.05;
+        double costWinter = 2026.04;
+        double costSpring = 2025.05;
+        double yearMaintenanceCost = 0;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // calculate the total maintenance costs for the entire year
+        yearMaintenanceCost = costSummer + costFall + costWinter + costSpring;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // output the cost for each season
+        System.out.println("The maintenance cost for the summer season (in USD) is: " + costSummer);
+        System.out.println("The maintenance cost for the fall season (in USD) is: " + costFall);
+        System.out.println("The maintenance cost for the winter season (in USD) is: " + costWinter);
+        System.out.println("The maintenance cost for the spring season (in USD) is: " + costSpring);
+
+        // output the total cost for the whole year
+        System.out.println("The yearly maintenance cost (in USD) is: " + yearMaintenanceCost);
     }
 }
